@@ -1,0 +1,24 @@
+
+body {
+    margin: 0;
+}
+nav {
+    background-color: blue ;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    color: red;
+    text-decoration: none;
+    font-size: 16pt;
+}
+@media (max-width:768px) {
+    nav a{
+        display: none;
+        
+    }
+
+}
