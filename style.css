@@ -6,6 +6,7 @@ body {
                          'section section aside aside'
                          'footer footer footer footer';
     grid-template-rows: 15vh 60vh 30vh;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
 }
 nav {
     grid-area: navbar;
@@ -48,6 +49,7 @@ nav a{
                             'aside aside aside aside'
                             'footer footer footer footer';
         grid-template-rows: 15vh 60vh 60vh 30vh;
+        
 
     }
     
@@ -72,12 +74,45 @@ nav a{
 section{
     grid-area: section;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section img {
+    border-radius: 100%;
+    z-index: 10;
+}
+section h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
 }
 aside{
     grid-area: aside;
     background-color: gold;
 }
 footer{
+    display: inline;
     grid-area: footer;
     background-color: red;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+#contato {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+#nick {
+    width: 100;
+    display: flex;
+    justify-content:space-around;
+}
+footer img {
+    align-content: center;
+    width: 30px;
+    height: 30px;
+  
 }
